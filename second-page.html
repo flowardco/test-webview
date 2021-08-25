@@ -75,7 +75,7 @@
     <!-- Trigger/Open The Modal -->
     <button id="myBtn" onclick="performClick()">Open Modal</button>
 
- 
+    <h1 id="h1"></h1>
   </body>
   <script>
     function performClick() {
@@ -85,6 +85,7 @@
     }
     function fillDetails(jsonData) {
       console.log(jsonData);
+      document.getElementById('h1').innerHTML = jsonData;
     }
     // window.onmessage = function (event) {
     //   console.log(event);
