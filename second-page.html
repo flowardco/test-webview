@@ -68,7 +68,7 @@
   </style>
   <body>
     <div style="margin-bottom: 15px">
-      <a onclick="goToBackToApp()" href="./journeycompleted"> back to app</a>
+      <a onclick="goToBackToApp()" > back to app</a>
     </div>
     <a href="./index.html">back plz</a>
     <h1>welecome second page</h1>
@@ -91,6 +91,7 @@
     }; 
     
     function goToBackToApp() {
+      window.parent.postMessage('journeyCompleted', '*')
       console.log("close");
     }
   </script>
