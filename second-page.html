@@ -88,10 +88,10 @@
       // window.parent.postMessage(jsonData, '*')
       document.getElementById('h1').innerHTML = jsonData;
     }
-    // window.onmessage = function (event) {
-    //   console.log(event);
-    //   // alert(event.data);
-    // }; 
+    window.onmessage = function (event) {
+      console.log(event);
+      // alert(event.data);
+    }; 
     
     function goToBackToApp() {
       window.parent.postMessage('journeyCompleted', '*')
